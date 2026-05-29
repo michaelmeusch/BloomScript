@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "BloomScript Narrative Studio",
+    "slug": "mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon-bloomscript.svg",
+    "scheme": "mobile",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/icon-bloomscript.svg",
+      "resizeMode": "contain",
+      "backgroundColor": "#F7F5F0"
+    },
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {},
+    "web": {
+      "favicon": "./assets/images/icon-bloomscript.svg"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/icon-bloomscript.svg",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#F7F5F0"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "expo-document-picker",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow BloomScript to save artwork to your photo library.",
+          "savePhotosPermission": "Allow BloomScript to save narrative compositions.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
